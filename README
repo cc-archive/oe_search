@@ -1,0 +1,5 @@
+This search makes use of a custom Google search:
+http://google.com/coop/cse?cx=014820550253768786988%3Awe9jedjkeci
+
+It utilizes Google's AJAX Search API:
+http://code.google.com/apis/ajaxsearch/

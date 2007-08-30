@@ -1,0 +1,77 @@
+body {
+	font-family: "Lucida Grande", verdana, sans-serif;
+}
+
+img {
+	border: none;
+}
+
+#header {
+	position: relative;
+	height: 6em;
+	background: #FFF url('../images/cc-header-bg.png') bottom repeat-x;
+}
+
+#headerLogo {
+	position: absolute;
+	left: 1em;
+	line-height: 5em;
+}
+
+#headerInfoBar {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+#headerInfoBar a {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 75%;
+	text-decoration: none;
+}
+
+#headerInfoBar a:hover {
+	text-decoration: underline;
+}
+
+#headerInfoBar a:visited {
+	color: #ffffff;
+}
+
+#headerLinks {
+	margin-left: 1ex;
+}
+
+#footer {
+	position: relative;
+	background: url('../images/bg-std.png') repeat-x top left;
+	clear: both;
+	margin-top: 2em;
+	color: #888;
+	font-size: 0.9em;
+	text-align: left;
+}
+
+#searchResults {
+	margin: 1em;
+}
+
+#searchBox {
+	margin: 1em;
+}
+
+#googleSearchControl {
+	float: left;
+	margin-right: 1em;
+}
+
+.gsc-tabsArea {
+	display: none;
+}
+
+.gsc-ad-box {
+	display: none;
+}
