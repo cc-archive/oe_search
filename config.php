@@ -22,8 +22,8 @@ $config = new siteConfig;
 
 # variables that need to be interpolated inside strings and HEREDOCs
 # will go in the siteConfig object
-$config->_rootDir			= "/var/www/cc/oer-search"; # root directory
-$config->_rootUri			= "http://localhost/cc/oer-search"; # root uri 
+$config->_rootDir			= "/var/www/www/linked_cse"; # root directory
+$config->_rootUri			= "http://localhost/linked_cse"; # root uri 
 $config->_imgUri			= "{$config->_rootUri}/images"; # where images live
 $config->_cssUri			= "{$config->_rootUri}/css"; # where css files live
 $config->_jsUri				= "{$config->_rootUri}/js"; # where javascript files live
