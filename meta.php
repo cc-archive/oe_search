@@ -27,9 +27,8 @@ $commonHeaders = <<<HEADERS
 	<meta name='keywords' content='oer, open, education, open education resources, creative commons' />
 	<meta name='description' content='Open Education Resource Search' />
 	<link href='http://www.google.com/uds/css/gsearch.css' type='text/css' rel='stylesheet' />
-	<script src='http://www.google.com/uds/api?file=uds.js&amp;v=1.0' type='text/javascript'></script>
 	<link rel='stylesheet' media='all' type='text/css' href='{$config->_cssUri}/site.css' />
-	<script type='text/javascript' src='{$config->_jsUri}/site.js'></script>
+<!--	<script type='text/javascript' src='{$config->_jsUri}/site.js'></script> -->
 	<script type='text/javascript' src='{$config->_jsUri}/standard.js'></script>
 
 HEADERS;
