@@ -38,7 +38,7 @@ switch ( $config->_thisScript ) {
 	case "index.php":
 		$myHeaders = <<<HEADERS
 
-	<title>OER Search - Home</title>
+	<title>CC Learn OE Search - Home</title>
 $commonHeaders
 
 HEADERS;
@@ -47,7 +47,7 @@ HEADERS;
 	default:
 		$myHeaders = <<<HEADERS
 
-	<title>OER Search</title>
+	<title>CC Learn OE Search</title>
 $commonHeaders
 
 HEADERS;
