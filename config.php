@@ -22,13 +22,13 @@ $config = new siteConfig;
 
 # variables that need to be interpolated inside strings and HEREDOCs
 # will go in the siteConfig object
-$config->_rootDir			= "/var/www/www/linked_cse"; # root directory
-$config->_rootUri			= "http://localhost/linked_cse"; # root uri 
-$config->_imgUri			= "{$config->_rootUri}/images"; # where images live
-$config->_cssUri			= "{$config->_rootUri}/css"; # where css files live
-$config->_jsUri				= "{$config->_rootUri}/js"; # where javascript files live
-$config->_smarty			= "{$config->_rootDir}/smarty"; # where smarty files live
-$config->_recordsPerPage	= "30"; # number of results per page on food_search.php
+$config->_rootDir		= "/var/www/oesearch.creativecommons.org/www"; # root directory
+$config->_rootUri		= "http://oesearch.creativecommons.org"; # root uri 
+$config->_imgUri		= "{$config->_rootUri}/images"; # where images live
+$config->_cssUri		= "{$config->_rootUri}/css"; # where css files live
+$config->_jsUri			= "{$config->_rootUri}/js"; # where javascript files live
+$config->_smarty		= "{$config->_rootDir}/smarty"; # where smarty files live
+$config->_recordsPerPage	= "30"; # number of results per page
 $config->_thisScript		= basename($_SERVER['PHP_SELF']);
 
 # in some cases we might want to send the user back to the page
