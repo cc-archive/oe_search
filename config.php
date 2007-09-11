@@ -9,8 +9,8 @@
  */
 
 # establish an error reporting level suitable for the site
-#error_reporting (0); # don't show any errors
-error_reporting(E_ALL); # show all errors
+error_reporting (0); # don't show any errors
+#error_reporting(E_ALL); # show all errors
 #error_reporting(E_ALL ^ E_NOTICE); # show all errors except notices
 
 # set various site-wide variables
@@ -50,9 +50,9 @@ require(SMARTYDIR . "/Smarty.class.php"); # Smarty templates
 $smarty = new Smarty();
 $smarty->template_dir	= "{$config->_rootDir}/templates";
 $smarty->compile_dir	= "{$config->_smarty}/templates_c";
-$smarty->cache_dir		= "{$config->_smarty}/cache";
-$smarty->config_dir		= "{$config->_smarty}/configs";
-#$smarty->caching		= true; # turn on smarty template caching
+$smarty->cache_dir	= "{$config->_smarty}/cache";
+$smarty->config_dir	= "{$config->_smarty}/configs";
+#$smarty->caching	= true; # turn on smarty template caching
 
 # go ahead and register our $config object with smarty
 $smarty->assign("config", $config);
