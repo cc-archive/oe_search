@@ -25,7 +25,7 @@
 $commonHeaders = <<<HEADERS
 	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 	<meta name='keywords' content='oer, open, education, open education resources, creative commons' />
-	<meta name='description' content='Open Education Resource Search' />
+	<meta name='description' content='CC Learn Open Education Search' />
 	<link href='http://www.google.com/uds/css/gsearch.css' type='text/css' rel='stylesheet' />
 	<link rel='stylesheet' media='all' type='text/css' href='{$config->_cssUri}/site.css' />
 <!--	<script type='text/javascript' src='{$config->_jsUri}/site.js'></script> -->
@@ -38,7 +38,7 @@ switch ( $config->_thisScript ) {
 	case "index.php":
 		$myHeaders = <<<HEADERS
 
-	<title>CC Learn OE Search - Home</title>
+	<title>CC Learn Open Education Search - Home</title>
 $commonHeaders
 
 HEADERS;
@@ -47,7 +47,7 @@ HEADERS;
 	default:
 		$myHeaders = <<<HEADERS
 
-	<title>CC Learn OE Search</title>
+	<title>CC Learn Open Education Search</title>
 $commonHeaders
 
 HEADERS;

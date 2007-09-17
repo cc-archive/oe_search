@@ -9,7 +9,7 @@
 
 <div id='header'>
 	<div id='headerLogo'>
-		<a href='{$config->_rootUri}/'><img style='vertical-align: middle;' src='{$config->_imgUri}/cc-learn.png' alt='ccLearn'/></a>
+		<a href='{$config->_rootUri}/'><img style='vertical-align: middle;' src='{$config->_imgUri}/cc-logo.png' alt='ccLearn'/></a>
 	</div>
 	<div id='headerInfoBar'>
 		<div id='headerLinks'>
