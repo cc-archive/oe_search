@@ -23,7 +23,9 @@ img {
 	bottom: 0px;
 	width: 100%;
 	color: #ffffff;
-	background-color: #000000;
+	background-color: #ffffff;
+	font-size: 75%;
+	font-family: 'Lucida Grande',Verdana,Arial,Sans-Serif;
 }
 
 #headerInfoBar a {

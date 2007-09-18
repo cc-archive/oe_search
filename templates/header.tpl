@@ -13,9 +13,8 @@
 	</div>
 	<div id='headerInfoBar'>
 		<div id='headerLinks'>
-			<a href='{$config->_rootUri}/index.php'>search</a> |
-			<a href='{$config->_rootUri}/about.php'>about</a> |
-			<a href='{$config->_rootUri}/sponsors.php'>sponsors</a>
+			<a href='{$config->_rootUri}/about.php'>About</a>&nbsp;&nbsp;
+			<a href='{$config->_rootUri}/sponsors.php'>Sponsors</a>
 		</div>
 	</div>
 </div>
