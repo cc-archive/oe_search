@@ -9,12 +9,20 @@
 
 <div id='header'>
 	<div id='headerLogo'>
-		<a href='{$config->_rootUri}/'><img style='vertical-align: middle;' src='{$config->_imgUri}/cc-logo.png' alt='ccLearn'/>Open Education Search</a>
+		<a href='{$config->_rootUri}/'><img id='headerLogo' src='{$config->_imgUri}/cc-logo.png' alt='ccLearn' /></a>
 	</div>
-	<div id='headerInfoBar'>
-		<div id='headerLinks'>
-			<a href='{$config->_rootUri}/about.php'>About</a>&nbsp;&nbsp;
-			<a href='{$config->_rootUri}/sponsors.php'>Sponsors</a>
-		</div>
+</div>
+<div id='headerInfoBar'>
+	<div id='headerLinks'>
+		<a href='{$config->_rootUri}/about.php'>About</a>&nbsp;&nbsp;
+		<a href='{$config->_rootUri}/sponsors.php'>Sponsors</a>&nbsp;&nbsp;
+		<a href='http://learn.creativecommons.org'>ccLearn</a>
+	</div>
+	<div id='headerLang'>
+		<form action='{$config->_rootUri}' method='get'>
+			<select name='lang' disabled='disabled'>
+				<option value=''>Select a language</option>
+			</select>
+		</form>
 	</div>
 </div>

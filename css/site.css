@@ -7,31 +7,27 @@ img {
 }
 
 #header {
-	position: relative;
-	height: 6em;
+	height: 90px;
 	background: #FFF url('../images/cc-header-bg.png') bottom repeat-x;
 }
 
 #headerLogo {
-	position: absolute;
-	left: 1em;
-	line-height: 5em;
+	margin-top: 20px;
+	margin-left: 10px;
 }
 
 #headerInfoBar {
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
+	position: relative;
+	padding: 1ex;
+	padding-bottom: 2ex;
 	color: #ffffff;
 	background-color: #ffffff;
 	font-size: 75%;
 	font-family: 'Lucida Grande',Verdana,Arial,Sans-Serif;
+	border-bottom: 1px solid #d0d0d0;
 }
 
 #headerInfoBar a {
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 75%;
 	text-decoration: none;
 }
 
@@ -40,15 +36,20 @@ img {
 }
 
 #headerInfoBar a:visited {
-	color: #ffffff;
+	color: blue;
 }
 
 #headerLinks {
 	margin-left: 1ex;
 }
 
+#headerLang {
+	position: absolute;
+	top: 1ex;
+	right: 1ex;
+}
+
 #footer {
-	position: relative;
 	background: url('../images/bg-std.png') repeat-x top left;
 	clear: both;
 	margin-top: 2em;
@@ -57,23 +58,15 @@ img {
 	text-align: left;
 }
 
-#searchResults {
-	margin: 1em;
+#advancedSearch {
+	margin-top: 1em;
 }
 
 #searchBox {
 	margin: 1em;
 }
 
-#googleSearchControl {
-	float: left;
-	margin-right: 1em;
-}
-
-.gsc-tabsArea {
-	display: none;
-}
-
-.gsc-ad-box {
-	display: none;
+.aboutDiv {
+	text-align: justify;
+	margin: 1em;
 }
