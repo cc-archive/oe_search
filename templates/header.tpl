@@ -5,7 +5,7 @@
 
 <head>{$myHeaders}</head>
 
-<body>
+<body onload='loadMoreSearchOptions();'>
 
 <div id='header'>
 	<div id='headerLogo'>

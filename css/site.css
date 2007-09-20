@@ -70,3 +70,16 @@ img {
 	text-align: justify;
 	margin: 1em;
 }
+
+a.moreSearchOptions {
+	font-size: x-small;
+	text-decoration: none;
+}
+
+a.moreSearchOptions:hover {
+	text-decoration: underline;
+}
+
+a.moreSearchOptions:visited {
+	color: blue;
+}
