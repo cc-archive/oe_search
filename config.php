@@ -22,8 +22,16 @@ $config = new siteConfig;
 
 # variables that need to be interpolated inside strings and HEREDOCs
 # will go in the siteConfig object
-$config->_rootDir		= "/var/www/cc/oesearch"; # root directory
-$config->_rootUri		= "http://localhost.creativecommons.org/cc/oesearch"; # root uri 
+
+# toggle the rootUri and rootDir based on which machine this is running on
+if ( $_SERVER['SERVER_NAME'] == "localhost.creativecommons.org" ) {
+	$config->_rootDir		= "/var/www/cc/oesearch"; # root directory
+	$config->_rootUri		= "http://localhost.creativecommons.org/cc/oesearch"; # root uri 
+} else {
+	$config->_rootDir		= "/var/www/oesearch.creativecommons.org/www"; # root directory
+	$config->_rootUri		= "http://oesearch.creativecommons.org"; # root uri 
+}
+
 $config->_imgUri		= "{$config->_rootUri}/images"; # where images live
 $config->_cssUri		= "{$config->_rootUri}/css"; # where css files live
 $config->_jsUri			= "{$config->_rootUri}/js"; # where javascript files live
