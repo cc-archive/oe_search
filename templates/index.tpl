@@ -1,13 +1,13 @@
 {$header}
 
 <div id='searchBox'>
-	<form id="cref_iframe" action=".">
+	<form id="cref_iframe" action="." onsubmit='return appendExtendedSearch("cref_iframe");'>
 		<div id='searchControl'>
 			<!-- Google CSE Search Box  -->
 			<input type="hidden" name="cref" value="http://oercloud.creativecommons.org/api/posts/coop_context" />
 			<input type="hidden" name="cof" value="FORID:9" />
 			<input type="hidden" name="filetype" value="doc" />
-			<input type="text" name="q" size="50" value="{$smarty.get.q}" />
+			<input type="text" name="q" size="50" value="{$q}" />
 			<input type="submit" name="sa" value="Search" />
 			<a href='{$smarty.server.PHP_SELF}' onclick='toogleSearchOptions(); return false;' id='moreOptionsLink' class='moreSearchOptions'>More options</a>
 			<script type="text/javascript" src="http://google.com/coop/cse/brand?form=cref_iframe"></script>
@@ -15,33 +15,28 @@
 		<div id='advancedSearch' style='display: none;'>
 			<div style='margin-bottom: 1em;'>
 				Filter by file type:
-				<select name='filetype'>
+				<select name='filetype' id='filterByFiletype'>
 					<option value=''>All file types</option>
-					<option value='ogg,mp3,wav'>Audio</option>
-					<option value='avi,mpg'>Video</option>
-					<option value='txt'>Text</option>
-					<option value='pdf'>PDF</option>
-					<option value='doc'>Microsoft Word</option>
-					<option value='xls'>Microsoft Excel</option>
-					<option value='html'>Web</option>
+{foreach from=$fileTypes key=key item=fileType}
+	{if $key == $smarty.get.filetype}
+					<option value='{$key}' selected='selected'>{$fileType}</option>
+	{else}
+					<option value='{$key}'>{$fileType}</option>
+	{/if}
+{/foreach}
 				</select>
 			</div>
 			<div>
 				Filter by license type:
-				<select disabled='disabled' name='license'>
+				<select disabled='disabled' id='filterByLicense' name='licensetype'>
 					<option value=''>not filtered by license</option>
-					<option value='(cc_publicdomain|cc_attribute|cc_sharealike|cc_noncommercial|cc_nonderived)'>
-						free to use or share
-					</option>
-					<option value='(cc_publicdomain|cc_attribute|cc_sharealike|cc_nonderived).-(cc_noncommercial)'>
-						free to use or share, even commercially
-					</option>
-					<option value='(cc_publicdomain|cc_attribute|cc_sharealike|cc_noncommercial).-(cc_nonderived)'>
-						free to use share or modify
-					</option>
-					<option value='(cc_publicdomain|cc_attribute|cc_sharealike).-(cc_noncommercial|cc_nonderived)'>
-						free to use, share or modify, even commercially
-					</option>
+{foreach from=$licenseTypes key=key item=licenseType}
+	{if $key == $smarty.get.licensetype}
+					<option value='{$key}' selected='selected'>{$licenseType}</option>
+	{else}
+					<option value='{$key}'>{$licenseType}</option>
+	{/if}
+{/foreach}
 				</select>
 			</div>
 		</div>
