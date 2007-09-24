@@ -15,7 +15,7 @@
 <div id='headerInfoBar'>
 	<div id='headerLinks'>
 		<a href='{$config->_rootUri}/about.php'>About</a>&nbsp;&nbsp;
-		<a href='{$config->_rootUri}/sponsors.php'>Sponsors</a>&nbsp;&nbsp;
+		<a href='{$config->_rootUri}/supporters.php'>Supporters</a>&nbsp;&nbsp;
 		<a href='http://learn.creativecommons.org'>ccLearn</a>
 	</div>
 	<div id='headerLang'>

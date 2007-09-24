@@ -18,6 +18,6 @@ include("config.php");
 include("header.php");
 include("footer.php");
 
-$smarty->display("sponsors.tpl");
+$smarty->display("supporters.tpl");
 
 ?>
