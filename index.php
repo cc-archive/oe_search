@@ -37,8 +37,9 @@ $smarty->assign("licenseTypes", $licenseTypes);
 # values from the advanced drop downs, but only do this if the use slected some 
 # options from the extended search
 if ( isset($_GET['q']) ) {
-	if ( ! empty($_GET['appendedString']) ) {
-		$origQuery = substr($_GET['q'], 0, strpos($_GET['q'], $_GET['appendedString']));
+	$appendedString = trim($_GET['appendedString']);
+	if ( ! empty($appendedString) ) {
+		$origQuery = substr($_GET['q'], 0, strpos($_GET['q'], $appendedString));
 		$smarty->assign("q", $origQuery);
 	} else {
 		$smarty->assign("q", $_GET['q']);
