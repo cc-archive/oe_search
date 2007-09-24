@@ -48,7 +48,7 @@ function appendExtendedSearch(formid) {
 	// start off the queryAppend with an AND so that if the user decides to put
 	// some manual search options that conflict with the ones that may be
 	// appended, we won't exclude a lot of records
-	var queryAppend = ' AND ';
+	var queryAppend = ' ';
 
 	// this doesn't work yet, it's just a placeholder for the moment
 	//if ( byLicense[byLicense.selectedElement].value != '' ) {
